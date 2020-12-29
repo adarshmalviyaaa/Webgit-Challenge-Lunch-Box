@@ -1,0 +1,887 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+
+}
+header
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 3000000000;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+    
+}
+#home{
+    background-image: 
+}
+.logo-text{
+    width: 300px;
+    
+    position: relative;
+    left: 0px;
+    transition: 0.7s;
+    
+}
+.logo-text:hover{
+    transform: scale(1.1);
+    
+}
+#Home img{
+    width: 100%
+}
+body{
+    background-color: white;
+}
+p{
+    color: black;
+}
+header .image-logo{
+    position: fixed;
+    width:100px;
+    left: 0px;
+    
+}
+.farji{
+    color: aliceblue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+}
+.home-chef{
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    z-index: 2;
+    
+    max-width: 400px;
+
+    
+    float: left;
+}
+.home-text{
+    font-family: 'Pattaya', sans-serif;
+   
+    position:absolute;
+    top: 200px;
+    left:150px;
+    color: wheat;
+   
+    font-size: 30px;
+}
+#home p{
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    font-family: 'Pattaya',sans-serif;
+    max-width: 300px;
+}
+.cloud{
+    position: absolute;
+    top:150px;
+    left:250px;
+    max-width:   500px;
+    max-height: 350px;
+    opacity: 1;
+}
+.cloud.show{
+    opacity: 1;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    color: #fff;
+    
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.6s;
+    color: aliceblue;
+    font-size: 20px;
+}
+header ul li a:hover{
+   font-size: 25px;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+header.sticky ul li a:hover{
+   font-size: 25px;
+}
+
+#textchanger{
+    border-radius: 50px;
+   
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 620px;
+    left: 430px;
+    cursor: pointer;
+ 
+    padding: 15px 25px ;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  animation: gradient 4.5s infinite 1.5s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+/*    background-image:  linear-gradient(to right, #FF512F 0%, brown 51%, #FF512F 100%)*/
+/*    background-image: linear-gradient(to right, red 0%, darkorange 51%, red 100%)*/
+}
+
+@keyframes gradient {
+  0% { background: linear-gradient(90deg, orange 0%, red 100%) }
+  10% { background: linear-gradient(90deg, #d53369 0%, #daae51 100%) }
+  20% { background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%) }
+  30% { background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%) }
+  40% { background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%) }
+  50% { background: linear-gradient(90deg, hotpink 0%, lightsalmon 100%) }
+  60% { background: linear-gradient(90deg, white 0%, red 100%) }
+  70% { background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%) }
+  80% { background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) }
+  90% { background: linear-gradient(90deg, brown 0%, red 100%) }
+  100% { background: linear-gradient(90deg, orange 0%, red 100%) }
+}
+#textchanger:hover { 
+   
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+}
+
+#ourmeals{
+     background-color: black;
+    margin: :0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: 'Quicksand',sans-serif;
+}
+.container{
+     
+    margin-left: 100px ;
+    margin-right: 100px ;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+#our-meals{
+    margin: auto 0px;
+    align-content: center;
+    padding-left: 50px;
+    padding-top: 30px;
+    background: white;
+   
+        
+}
+
+.card{
+    position: relative;
+    margin: 60px 20px;
+    width: 300px;
+    height: 400px;
+    background: white ;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+     border-radius: 10px;
+    float: left;
+/*    align-content: space-between;*/
+    
+    
+}
+.card.veg{
+    background: green;
+   
+    
+}
+.card.veg h2{
+    text-align: center ;  font-weight: 800;
+    text-decoration: underline;
+    
+}
+.card.non-veg h2{
+    text-align: center ;  font-weight: 800;
+    text-decoration: underline;
+    
+}
+
+
+.card.veg p{
+    font-size: 20px
+}
+.card.veg h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.card.non-veg p{
+    font-size: 20px
+}
+.card.non-veg h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.card.non-veg{
+    background: #ff0000;
+}
+.card:hover{
+    z-index: 1000;
+    transform: perspective(2000px)rotate(-10deg);
+    box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+}
+.card .imgBox{
+    position: relative;
+    width: 100%;
+    height:100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+     border-radius: 10px;
+    
+}
+.img4{
+    width: 300px;
+    height: 400px;
+    
+}
+.card:hover .imgBox{
+    transform: rotateY(-135deg);
+      border-radius: 10px;
+}
+
+.card .imgBox .img{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card .details{
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    
+    
+}
+.our-meals-logo{
+    position: relative;
+    top: 10px;
+    left: 350px;
+    width: 40%;
+
+}
+.our-meals-align{
+    position: absolute;
+    left: 117px;
+}
+.veg-meals{
+    margin: 0px 0 20px 0;
+    color: white;
+    background-color: green;
+    width: 250px;
+    position: absolute;
+   z-index: 100000000;
+    top: 0px;
+    left: 380px;
+    padding: 10px;
+    border: 5px solid black;
+    text-align: center;
+    
+    
+}
+/*
+.non-veg-meals{
+    color: white;
+    background-color: red;
+    max-width: 250px;
+    max-height: 
+    position: relative;
+    left: 360px;
+    top: 200px;
+    z-index: 1000000;
+    padding: 10px;
+    border: 5px solid black;
+    text-align: center;
+    
+    
+}
+*/
+.non-veg-meals{
+    color: white;
+    background-color: red;
+    height: 50px;
+    width: 250px;
+    z-index: 200000000;
+    position: absolute;
+    text-align: center;
+    top: 520px;
+    left: 380px;
+    padding: 10px;
+    border: 5px solid black;
+    
+}
+#Why-Lunchbox{
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    background-color: white;
+        
+   
+   
+    
+}
+.feature-row{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;                                  
+    
+}
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    transition: .8s;
+    height: 350px;
+    
+}
+.feature-col:hover{
+    transform: scale(1.1);
+    background-color: lightgray;
+}
+.feature-col img{
+    width: 150px;
+   
+    
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.feature-col p{
+    color: black;
+}
+.whyimg{
+    width: 40%;
+    position: relative;
+    left: 430px;
+    transition: .7s;
+    
+
+}
+.whyimg:hover{
+    transform: scale(1.1);
+}
+
+/*
+.imgsh{
+    max-width: 60px;
+    position: relative;
+    left: 320px;
+    
+    
+    
+}*/
+
+#steps{
+    background-color: white;
+       
+}
+#steps div{
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+
+#steps button{
+    
+    height: 70px;
+    width: 180px;
+    padding:20px;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.8s;
+    color: black;
+    background-color: forestgreen;
+    align-items: space-around;
+}
+#steps button:hover{
+    color: white;
+    background-color: darkred;
+    
+}
+
+
+#steps img{
+    
+    display: block;
+    width: 600px;
+    margin: auto;
+    
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+#steps .steps-heading{
+    border: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+.radio-buttons{
+    width: 70%;
+    margin: 0 auto;
+    
+    text-align: left;
+    margin-left: 100px;
+}
+.custom-radio input{
+    display: none;
+    
+}
+.radio-btn{
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+}
+.radio-btn > i{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+
+.radio-btn.hobbies-icon{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-btn,.hobbies-icon i{
+    color: #B373e6;
+    line-height: 80px;
+    font-size: 60px;
+    
+}
+
+.radio-btn,.hobbies-icon h3{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.custom-radio input:checked +.radio-btn{
+    border: 3px solid white;
+}
+.custom-radio input:checked +.radio-btn > i{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+   
+.radio-buttons2{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 100px;
+}
+.custom-radio2 input{
+    display: none;
+    
+}
+.radio-btn2{
+    margin: 10px;
+    width: 180px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+}
+.radio-btn2 > i{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+    
+}
+
+.radio-btn2.hobbies-icon{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-btn2,.hobbies-icon i{
+    color: white;
+    line-height: 80px;
+    font-size: 60px;
+    
+}
+
+.radio-btn2,.hobbies-icon h3{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.custom-radio2 input:checked +.radio-btn2{
+    border: 3px solid white;
+}
+.custom-radio2 input:checked +.radio-btn2 > i{
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+#tiffin-service h2{
+    margin-left: 100px;
+    margin-right: 400px;
+align-items: left;
+    font-size: 20px;
+    color: white;
+    
+}
+#tiffin-service h4{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:  sans-serif;
+    margin-left: 100px;
+    color: whitesmoke;
+    font-style: oblique;
+    
+}
+#tiffin-service hr{
+    margin-left: 100px;
+   margin-right: 300px;
+    color: black;
+    font-weight: bold;
+}
+.tiffin-heading{
+    width: 600px;
+    margin: auto;
+    display: block;
+}
+#tiffin-service {
+    width: 100%;
+}
+
+/*
+section img .covid{
+    
+    width:  100pximportant;
+    height: 10px;
+}*/
+#corona{
+    max-width: 99%;
+}
+.corona1{
+    width: 95%;
+}
+.footer-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+.single-footer{
+    width: 33%;
+    float: left;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+}
+.single-footer p{
+    width: 70%;
+    font-size: 20px;
+}
+#footer{
+    width: 100%;
+    height: 300px;
+
+    background-color: black;
+    opacity: 1;
+   
+    
+}
+.footer-logo{
+    width: 20%;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-links li{
+    list-style: none;
+}
+.form-control{
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px 0 0 5px;
+}
+.submit{
+    font-size: 20px;
+    border: 2px solid white;
+    
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    
+}
+.social-meadia{
+    color: white;
+    font-size: 50px;
+    
+}
+.social-meadia > i{
+    transition: .5s;
+}
+.social-meadia > i:hover{
+    font-size: 60px;
+    color: limegreen;
+    cursor: pointer;
+}
+.call > i{
+    font-size: 30px;
+    color: limegreen;
+}
+.download > i{
+    font-size: 50px;
+    color: white;
+    transition: .5s;
+}
+.download > i:hover{
+    color: orangered;
+    font-size: 60px;
+}
+.download{
+    color: white;
+    font-size: 25px;
+    
+}
+.buy > i{
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
+}
+.buy > i:hover{
+    background-color: limegreen;
+    color: black;
+    cursor: pointer;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 30px;
+}
+
+
+.modal-content {
+  background-color: seagreen;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+/
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.5s;
+    position: relative;
+    left: 450px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background-color: gray;
+    color:black;
+    border: 1px solid black;
+    
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+/*  background-color: #f2f2f2;*/
+  padding: 20px;
+    align-items: center;
+    display: block;
+    max-width: 50%;
+}
+.contact{
+    position: relative;
+    left: 200px;
+}
+#contact-us h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    max-width: 350px;
+    position: relative;
+    left: 480px;
+    background-color: black;
+    padding: 10px 20px;
+}
